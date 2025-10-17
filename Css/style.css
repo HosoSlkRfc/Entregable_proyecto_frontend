@@ -1,0 +1,217 @@
+
+.playfair-nec{
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: ;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+
+.playfair-nec-negri{
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+
+.raleway-nec1{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: ;
+  font-style: normal;
+}
+
+.raleway-nec1-negri{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.heroimg{
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+    
+
+}
+
+.fondo-titulo1{
+
+    background-color: dodgerblue;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+.fondo-etq1{
+    background-color: dodgerblue;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 250px;
+    max-width: 90%;
+    margin: 2px;
+    padding: 16px 12px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,.15);
+}
+.fondo-etqhorizontal{
+    background-color: dodgerblue;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 250px;
+    padding: 16px 12px;
+    border-radius: 0 10px 10px 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+.bcarrito{
+    background-color: rgb(138, 209, 32);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.img-producvertical{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 350px;
+    box-shadow: 0 6px 14px rgba(0,0,0,.15);
+}
+
+
+.img-productosobre{
+    width: 420px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    display: block;
+}
+
+.img-produtohorizontal{
+display: flex;
+align-items: stretch;
+justify-content: center;
+padding: 0;
+border-radius: 10px;
+max-width: 1100px;
+margin: 30px auto;
+overflow: hidden;
+}
+.img-produ-lado{
+    width: 80%;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 10px 0 0 10px;
+    display: block;
+}
+
+.fila-productos{
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    
+}
+
+.categoria{
+    position: relative;
+    width: 340px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0,0,0,.15);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.img-categoria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+.categoria:hover .img-categoria{
+    transform: scale(1.1);
+    filter: brightness(0.3);
+}
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+.categoria:hover .overlay{
+    opacity: 1;
+}
+header{
+    background-color: #f4f4f4;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.titulo{
+    font-size: 28px;
+    color: #222;
+    margin: 0;
+}
+.menu-principal ul{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+.menu-principal a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s, border-buttom 0.3s;
+    padding-bottom: 2px solid transparent;
+}
+
+.menu-principal a:hover{
+    color: dodgerblue;
+    border-bottom: 2px solid dodgerblue;
+}
+@media (max-width: 768px){
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu-principal ul{
+        flex-direction: column;
+        gap: 12px;
+    }
+}
