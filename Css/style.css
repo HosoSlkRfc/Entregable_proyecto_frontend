@@ -1,4 +1,8 @@
 
+body{
+    background-color: #b3d5eb;
+}
+
 .playfair-nec{
   font-family: "Playfair", serif;
   font-optical-sizing: auto;
@@ -54,11 +58,11 @@
     color: white;
     font-size: 18px;
     text-align: center;
-    width: 250px;
+    width: auto;
     max-width: 90%;
     margin: 2px;
     padding: 16px 12px;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     box-shadow: 0 8px 16px rgba(0,0,0,.15);
 }
 .fondo-etqhorizontal{
@@ -92,7 +96,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f4f4f4;
+    /*background-color: #f4f4f4;*/
     border-radius: 12px;
     overflow: hidden;
     max-width: 350px;
@@ -202,7 +206,7 @@ header{
 }
 
 .menu-principal a:hover{
-    color: dodgerblue;
+    color: white;
     border-bottom: 2px solid dodgerblue;
 }
 @media (max-width: 768px){
@@ -214,4 +218,68 @@ header{
         flex-direction: column;
         gap: 12px;
     }
+}
+span{
+    background-color: #037BC0;
+    color: #f4f4f4;
+}
+
+
+.menubajo{
+    margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    min-height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.menubajo h3{
+    margin: 0 0 8px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: #2a2a2a;
+    position: relative;
+}
+.menubajo h3::after{
+    content: "";
+    position:absolute;
+    left: 0;
+    bottom: -4px;
+    width: 40px;
+    height: 2px;
+    background: #037BC0;
+    border-radius: 2px;
+}
+
+.menubajo ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.menubajo a{
+    text-decoration: none;
+    color: #2c3e50;
+    transition: color.2s;
+    transform: .15s;
+}
+.menubajo a:hover{
+    color:#f4f4f4;
+    text-decoration: underline;
+    transform: translateX(3px);
+}
+
+footer{
+    background-color: dodgerblue;
+    color: white;
+}
+header {
+    background-color: dodgerblue;
+    color: white;
 }
