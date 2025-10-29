@@ -276,6 +276,11 @@ body { padding-top: 130px; }
 .menu-toggle{
     display: none !important;
 }
+#carrusel .carousel-item img {
+  width: 100%;
+  height: 60vh;             /* Ocupa 60% del alto visible */
+  object-fit: cover;
+}
 
 
 @media (max-width: 768px) {
@@ -367,5 +372,9 @@ body { padding-top: 130px; }
 .menu-principal.show {
   display: flex; 
 }
+
+  #carrusel .carousel-item img {
+    height: 40vh;           /* Más bajo en pantallas móviles */
+  }
 
 }
