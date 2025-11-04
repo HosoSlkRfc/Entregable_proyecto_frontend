@@ -374,7 +374,7 @@ body { padding-top: 130px; }
 }
 
   #carrusel .carousel-item img {
-    height: 40vh;           /* Más bajo en pantallas móviles */
+    height: 40vh;  
   }
 
 }
