@@ -278,7 +278,7 @@ body { padding-top: 130px; }
 }
 #carrusel .carousel-item img {
   width: 100%;
-  height: 60vh;             /* Ocupa 60% del alto visible */
+  height: 60vh;
   object-fit: cover;
 }
 
