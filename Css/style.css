@@ -184,6 +184,9 @@ header {
   color: #E8E4C9;
   margin: 0;
 }
+.ria{
+  color: #C79A7B;
+}
 .menu-principal ul {
   list-style: none;
   display: flex;
